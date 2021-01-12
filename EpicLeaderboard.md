@@ -33,7 +33,7 @@ Instance - A single instance of a compute unit executing a service. This could b
 
 ## High Level Architecture
 
-[High level architecture diagram](https://drive.google.com/file/d/1RnxhtcBaiKanaKtbcMnIqmZhvVe5MlG1/view?usp=sharing)
+![High level architecture diagram](/Architecture.png)
 
 Note: This approach is overengineered for the specific problem that is being asked. To accomplish what is asked the UserScoreDataStore is not needed and there is no need for 2 microservices. However, based on experience there is likely a desire to be able to retrieve a user's information, expand on their metadata about the matches, etc. This design gives flexibility to those goals without sacrificing the performance of the leaderboard service itself.
 
