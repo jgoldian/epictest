@@ -91,7 +91,7 @@ Reliability - The service should have standard monitoring in place to ensure it 
 Resilience - If the leaderboard store is unavailable errors should be returned to the caller, as well as logged. As this data store is not a source of truth for information, once the store is back up and either a game is finished (in the case of a write) or the request is retried, the correct response will be given.
 Capacity - This service should be mostly bound by the LeaderboardStore. In terms of local resource it is likely either limited by the CPU or the NIC. In a cloud environment it should be on a relatively small instance that can be distributed world wide and allow for more redundancy. However, finding the sweet spot for which instances make the most sense based on price would require further testing.
 
- See [API reference](https://app.swaggerhub.com/apis/JeffGold/LeaderboardService/1.0.0#/User/getLeaderboard) for more details.
+ See [API reference](https://app.swaggerhub.com/apis/JeffGold/LeaderboardService/1.0.1#/User/getLeaderboard) for more details.
 
 ### LeaderboardStore -
 A set of tables, 1 per reset window per game mode.
@@ -112,4 +112,4 @@ Capacity planning - Given that the number of writes would be known based on the 
 
 ## API Specification
 
-[Link to swagger](https://app.swaggerhub.com/apis/JeffGold/LeaderboardService/1.0.0)
+[Link to swagger](https://app.swaggerhub.com/apis/JeffGold/LeaderboardService/1.0.1)
